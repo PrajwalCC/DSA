@@ -1,6 +1,7 @@
 {
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
+        "*.ejs": "html",
         "array": "cpp",
         "deque": "cpp",
         "forward_list": "cpp",
@@ -14,6 +15,7 @@
         "regex": "cpp",
         "valarray": "cpp",
         "*.tcc": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "random": "cpp"
     }
 }
