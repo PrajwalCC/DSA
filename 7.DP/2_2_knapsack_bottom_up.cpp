@@ -11,7 +11,6 @@ int knapsack(int wt[], int v[], int w, int n){
 
     // static array
     // int dp[10][10];
-
     // 2-D vector
     vector<vector<int> > dp(n + 1, vector<int>(w + 1));
 
