@@ -12,9 +12,15 @@ int solve( int n, int cost[]){
     return min(dp[n-1],dp[n-2]);
 }
 int main(){
-    int n=3;
-    int cost[n]={10,15,20};
-    
+    // int n=3;
+    // int cost[n]={10,15,20};
+    int n;
+    cin>>n;
+    int cost[n];
+    for(int i=0; i<n; i++){
+       cin>>cost[i];
+    }
+
     // cout<<min(solve(dp,n-1,cost),solve(dp,n-2,cost));
     cout<<solve(n,cost);
     return 0;
