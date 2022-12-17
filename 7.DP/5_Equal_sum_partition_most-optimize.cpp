@@ -2,7 +2,7 @@
 // best logic -> int sum = sum of all element of array
 // sum1 = sum/2;
 // now we will find subset from given array whose sum is equal to sum1.. if such exit then partition is possible 
-// ----Find sum of all elements in array, divide it by 2, 
+// ---->Find sum of all elements in array, divide it by 2, 
 // Use another dp problem subset sum to check whether this (sum/2) can be generated or not.
 #include <bits/stdc++.h>
 using namespace std;
