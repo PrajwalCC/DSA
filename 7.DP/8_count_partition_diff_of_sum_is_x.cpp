@@ -53,7 +53,6 @@ int minDifference(int arr[], int n, int x)  {
 
 int main() 
 {
-   
     int n;
     cin >> n;
    	int a[n];
