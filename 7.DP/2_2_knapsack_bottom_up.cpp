@@ -38,12 +38,12 @@ int knapsack(int wt[], int v[], int w, int n){
         }
     }
 
-    for(int i=0; i<=n;i++){
-        for(int j=0; j<=w;j++){
-            cout<<dp[i][j]<<" ";
-        }
-        cout<<endl;
-    }
+    // for(int i=0; i<=n;i++){
+    //     for(int j=0; j<=w;j++){
+    //         cout<<dp[i][j]<<" ";
+    //     }
+    //     cout<<endl;
+    // }
     return dp[n][w];
 }
 
@@ -51,14 +51,14 @@ int main(){
     int n;
     cin>>n;
     int wt[n],v[n];
+    int w;
+    cin>>w;
     for(int i=0; i<n; i++){
         cin>>wt[i];
     }
     for(int i=0; i<n; i++){
         cin>>v[i];
     }
-    int w;
-    cin>>w;
     // int n=3,w=4;
     // int wt[3]={1,3,4};
     // int v[3]={1,3,5};    
