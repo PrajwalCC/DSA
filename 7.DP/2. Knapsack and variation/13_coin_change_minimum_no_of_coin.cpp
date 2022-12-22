@@ -8,11 +8,11 @@ int minCoins(int coin[], int n, int sum) {
 	vector<vector<int>>dp(n+1, vector<int>(sum+1));
 	for(int i=0; i<= n; i++ ){
 		for(int j=0; j<= sum; j++ ){
-			if(j==0){
-				dp[i][j]=0;
-			}
 			if(i==0){
 				dp[i][j]=INT_MAX - 1;
+			}
+			if(j==0){
+				dp[i][j]=0;
 			}
 		}
 	}
