@@ -1,3 +1,5 @@
+// AGGTAB
+// GXTXAYB
 #include <bits/stdc++.h>
 using namespace std;
 string noLongestSub(string s1, string s2, int n, int m){ 
@@ -19,25 +21,34 @@ string noLongestSub(string s1, string s2, int n, int m){
             }
         }
     }
-    // for printing longest subsequence
+    // for printing longest Super subsequence
     int i=n , j=m;
     string s = "";
-    while(i>=0 && j>=0){
+    while(i>0 && j>0){
         if(s1[i-1] == s2[j-1]){
-            s += s1[i];
+            s += s1[i-1];
             i--;
             j--;
         }
+        else if(dp[i-1][j] < dp[i][j-1]){       
+            s+=s2[j-1];
+            j--;
+        }
         else{
-            if(dp[i-1][j] > dp[i][j-1]){
-                i--;
-            }
-            else{
-                j--;
-            }
+            s+=s1[i-1];
+            i--;
         }
     }
+    while(i>=0){
+        s+=s1[i-1];
+        i--;
+    }
+    while(j>=0){
+        s+=s2[j-1];
+        j--;
+    }
     reverse(s.begin(), s.end());
+    
     return s;
 }
 int main(){

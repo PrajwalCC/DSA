@@ -37,7 +37,7 @@ int noLongestSub(string s1, string s2, int n, int m){
         }
     }
     
-    return m + n - dp[n][m];
+    return m + n -(2*dp[n][m]);
 }
 int main(){
     string s1, s2;
