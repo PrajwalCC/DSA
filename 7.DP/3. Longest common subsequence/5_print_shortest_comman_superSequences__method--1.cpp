@@ -6,7 +6,7 @@ string noLongestSub(string s1, string s2, int n, int m){
     vector<vector<int>>dp(n+1, vector<int>(m+1));
     for(int i=0; i<= n; i++){
         for(int j=0; j<= m; j++){
-            if(n==0 || m==0){
+            if(i==0 || j==0){
                 dp[i][j] = 0;
             }
         }
