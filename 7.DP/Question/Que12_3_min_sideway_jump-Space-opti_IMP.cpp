@@ -2,7 +2,7 @@
 // resource -> love babbar
 #include <bits/stdc++.h>
 using namespace std;
-int solve(int obstacle[],int  n, int currLane, int currPosition){
+int solve(int obstacle[],int  n){
     vector<int>next(4,INT_MAX);
     vector<int>curr(4,INT_MAX);
     next[0]=0;
@@ -35,6 +35,6 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>obstacle[i];
     }
-    cout<<solve(obstacle,n,2,0);
+    cout<<solve(obstacle,n);
     return 0;
 }

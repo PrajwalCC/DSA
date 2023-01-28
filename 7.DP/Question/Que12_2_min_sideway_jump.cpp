@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int solve(int obstacle[],int  n, int currLane, int currPosition){
+int solve(int obstacle[],int  n){
     vector<vector<int>>dp(4,vector<int>(n+1, INT_MAX));
     dp[0][n]=0;
     dp[1][n]=0;
@@ -32,6 +32,6 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>obstacle[i];
     }
-    cout<<solve(obstacle,n,2,0);
+    cout<<solve(obstacle,n);
     return 0;
 }
