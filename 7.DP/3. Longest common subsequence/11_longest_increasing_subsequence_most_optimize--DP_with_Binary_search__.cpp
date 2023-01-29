@@ -1,6 +1,6 @@
 // ques--Function to find length of longest increasing subsequence.
 // ***this method is only useful for giving length of LIS .. not for printing LIS 
-// becoz v vector is not the subsequence of that array , it is just manipulated ...
+// becoz v vector is not the subsequence(LIS) of that array , it is just manipulated ...
 // ANSWER---> *****length of LIS = v.size()*****
 // Time comp == nlog(n) which is best that n^2 (prev methods)
 

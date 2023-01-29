@@ -13,7 +13,7 @@ int solve(int a[],int n, int idx, int prev){
     for(int i=n-1; i>=0; i--){
         for(int j = i-1; j>= -1; j-- ){
             if(j == -1 || a[j] < a[i]){
-                dp[i][j+1] = max(dp[i+1][j+1], 1 + dp[i+1][i+1]);
+                dp[i][j+1] = max(dp[i+1][j+1], 1 + dp[i+1][i+1]);//dp[i+1][i+1] here i+1 is there becoz of coordinate shift
             }
             else{
                 dp[i][j+1]  = dp[i+1][j+1] ;
