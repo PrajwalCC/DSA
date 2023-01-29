@@ -4,6 +4,8 @@ using namespace std;
 int solve(int a[],int n, int idx, int prev){
 
     // vector<vector<int>> dp(n+1, vector<int>(n+1, 0)); //replce with two 1D vector
+    // replacement-> dp[i][j+1] = curr[j+1] , dp[i+1][j] = next[j]
+    // we are just replacing dp[i] --> curr  & dp[i+1] --> next
     vector<int>curr(n+1);
     vector<int>next(n+1);
     for(int i=n-1; i>=0; i--){
