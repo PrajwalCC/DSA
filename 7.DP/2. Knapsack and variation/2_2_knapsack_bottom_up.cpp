@@ -16,7 +16,7 @@ int knapsack(int wt[], int v[], int w, int n){
 
     for(int i=0; i<=n;i++){
         for(int j=0; j<=w;j++){
-            if(n==0 || w==0){
+            if(i==0 || j==0){
                 dp[i][j]=0;
             }
         }

@@ -1,4 +1,4 @@
-// Minimum number of insertion in a string to make it a palindrome = length of string - length of longest palindromic subsequence 
+// Minimum number of deletion in a string to make it a palindrome = length of string - length of longest palindromic subsequence 
 // ans = n - length of LPS
 #include <bits/stdc++.h>
 using namespace std;
